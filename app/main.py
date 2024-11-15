@@ -12,8 +12,10 @@ def run():
 
   df = pd.read_csv('data.csv')
   df = df[df['Continent'] == 'Africa']
-
+  print("Información del DF")
+  print(df)
   countries = df['Country'].values
+  print(countries)
   percentages = df['World Population Percentage'].values
   charts.generate_pie_chart(countries, percentages)
 

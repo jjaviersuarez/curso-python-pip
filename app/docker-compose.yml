@@ -1,0 +1,7 @@
+#declarar como se va a iniciar el servidor
+
+services: #construir servicio
+  app-csv: #nombre del servicio
+    build: #construir
+      context: . #contexto, la carpeta en la que está ubicado
+      dockerfile: Dockerfile #buscar el archivo Dockerfile para construir el contenedor
