@@ -7,4 +7,4 @@ def get_categories():
     categories = r.json() #transformar esa información obtenida en str pasarla  a json
     
     for category in categories:
-        print(f'El nombre: {category['name']}')
+        print(category['name'])
